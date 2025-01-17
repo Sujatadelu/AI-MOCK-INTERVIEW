@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const StartInterview = ({params}) => {
 
-    const { interviewId } = use(params);
+    const { interviewId } = params;
     const[interviewDetails , setInterviewDetails] = useState();
     const[mockInterviewQuestion , setMockInterviewQuestion] = useState([]);
     const[activeQuestion , setActiveQuestion] = useState(0);
